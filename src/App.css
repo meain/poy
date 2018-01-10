@@ -1,0 +1,96 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.App-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 25%;
+  background: url('https://s3.envato.com/files/223770327/590Blue%20Abstract%20Low%20Poly%20Background.jpg');
+  z-index: -10;
+}
+
+.App-content {
+  margin: 10% auto;
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: calc(100vw - 20%);
+  max-width: 1000px;
+  /* min-height: 90vh; */
+  font-family: 'Muli', sans-serif;
+  box-shadow: 0px 0px 10px -3px rgba(0, 0, 0, 0.75);
+}
+@media only screen and (max-width: 800px) {
+  .App-content {
+    margin-top: 10%;
+    width: 100vw;
+  }
+}
+.App-header {
+  padding: 5px;
+  font-family: 'Secular One', sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: skyblue underline double;
+}
+
+.App-login {
+  background: #f5f5f5;
+  width: 100.4%;
+  padding: 5px 0;
+  margin-left: -0.2%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.App-login-text {
+  font-size: 1rem;
+  color: grey;
+  float: left;
+  padding: 0 50px;
+  text-align: center;
+}
+.App-facebook-login {
+  border-radius: 0;
+  height: 40px;
+  border-radius: 30px;
+  padding: 0 30px;
+  display: inline-block;
+  background-color: rgba(66, 102, 178, 1);
+  color: white;
+  font-family: Arial, 'MS Trebuchet', sans-serif;
+  font-size: 0.75rem;
+}
+.App-facebook-login:hover {
+  background-color: rgba(66, 102, 178, 0.75);
+}
+.App-people-container {
+  padding: 5px 0;
+}
+.App-people {
+  text-align: center;
+}
+.App-vote {
+  margin-top: 50px;
+  height: 50px;
+  padding: 0 100px;
+  display: inline-block;
+  background-color: rgba(33, 150, 243, 1);
+  color: white;
+  font-size: 1.25rem;
+  width: 100.4%;
+  padding: 5px 0;
+  margin-left: -0.2%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-family: 'Muli', sans-serif;
+}
+
+.App-vote:hover {
+  background-color: rgba(33, 150, 243, 0.75);
+}
