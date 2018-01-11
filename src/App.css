@@ -8,13 +8,16 @@
   top: 0;
   left: 0;
   width: 100vw;
-  height: 25%;
+  height: 100vh;
   background: url('https://s3.envato.com/files/223770327/590Blue%20Abstract%20Low%20Poly%20Background.jpg');
+  /* background: rgb(141, 206, 212); */
   z-index: -10;
 }
 
 .App-content {
   margin: 10% auto;
+  margin-top: 5%;
+  padding-top: 40px;
   background: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: calc(100vw - 20%);
@@ -34,7 +37,11 @@
   font-family: 'Secular One', sans-serif;
   font-size: 3rem;
   text-align: center;
-  text-decoration: skyblue underline double;
+
+  /* background: rgb(141, 206, 212); */
+  color: white;
+  text-transform: uppercase;
+  padding-top: 50px;
 }
 
 .App-login {
@@ -56,20 +63,7 @@
   padding: 0 50px;
   text-align: center;
 }
-.App-facebook-login {
-  border-radius: 0;
-  height: 40px;
-  border-radius: 30px;
-  padding: 0 30px;
-  display: inline-block;
-  background-color: rgba(66, 102, 178, 1);
-  color: white;
-  font-family: Arial, 'MS Trebuchet', sans-serif;
-  font-size: 0.75rem;
-}
-.App-facebook-login:hover {
-  background-color: rgba(66, 102, 178, 0.75);
-}
+
 .App-people-container {
   padding: 5px 0;
 }
