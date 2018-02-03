@@ -7,6 +7,11 @@ class PersonCard extends Component {
   render() {
     return (
       <div className={this.props.selected ? 'PersonCard PC-selected' : 'PersonCard'}>
+        <label class="container">
+          <input type="checkbox" checked={this.props.selected} />
+          <span class="checkmark" />
+        </label>
+        {/* <input type="checkbox" checked={this.props.selected} className="PersonCard-checkbox" /> */}
         <div className="PersonCard-image-container">
           <img
             className="PersonCard-image"
@@ -16,7 +21,7 @@ class PersonCard extends Component {
         </div>
         <div className="PersonCard-data">
           <div className="PersonCard-name">{this.props.person.name}</div>
-          <div className="PersonCard-desc">Piece of shit with no life. Fucked up asshole.</div>
+          <div className="PersonCard-desc">Woopsie, there you go.</div>
         </div>
       </div>
     )
